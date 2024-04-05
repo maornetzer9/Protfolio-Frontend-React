@@ -47,7 +47,7 @@
         padding-top: 0px;
         text-align: center;
     }
-    .experienceContent, button {
+    .experienceContent, button, p{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,9 +55,8 @@
     
     .experienceImage {
         background: #a3e9f2;
-
-        margin-top: 50px;
-        margin-bottom: -50px;
+        margin-top: 60px;
+        margin-bottom: -60px;
         width: 250px;
         height: 150px;
     }

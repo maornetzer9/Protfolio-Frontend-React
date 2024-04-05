@@ -14,7 +14,12 @@ export default function ContactUs({ scrollToTop = () => {} }) {
                 className="textarea"
                 placeholder="Enter your message..."
             />
-            <button>Send Message</button>
+            <button style={{padding: '10px 40px '}}>
+                Send Message
+            </button>
+            <button onClick={scrollToTop}> 
+                Scroll To Top
+            </button>
             <div className="footerContainer">
                 <a
                     href="http://linkedin.com/in/maor-netzer"
@@ -24,9 +29,6 @@ export default function ContactUs({ scrollToTop = () => {} }) {
                 >
                     <BiLogoLinkedin size={20} />
                 </a>
-                <div style={{ margin: "50px" }}>
-                    <button onClick={scrollToTop}>Scroll To Top</button>
-                </div>
             </div>
         </div>
     );
