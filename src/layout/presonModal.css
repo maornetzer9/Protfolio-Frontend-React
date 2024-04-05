@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
     .personContainer {
-        height: 770px !important;
+        height: 700px !important;
         flex-direction: column;
         height: auto;
         padding: 20px;
