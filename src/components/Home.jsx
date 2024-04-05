@@ -12,7 +12,7 @@ export default function Home() {
     const scrollToNextComponent = (index) => {
         if (index + 1 < componentRefs.length && componentRefs[index + 1]) {
             window.innerWidth <= 768 
-              ? window.scrollBy({ top: 830, behavior: 'smooth' })
+              ? window.scrollBy({ top: 770, behavior: 'smooth' })
                 : componentRefs[index + 1].scrollIntoView({ behavior: "smooth" });
         }
     };

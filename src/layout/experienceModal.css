@@ -33,6 +33,10 @@
         flex-direction: column;
     }
 
+    .experienceContent {
+        height: 625px !important;
+    }
+
     .experienceContent,
     .experienceImage,
     .experienceImageRight {

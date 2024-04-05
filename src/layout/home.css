@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     color: black;
-    /* font-weight: 500; */
 }
 
 h1, h2 {
@@ -10,14 +9,13 @@ h1, h2 {
 }
 
 h3 {
-    /* font-size: 35px; */
+    /* Adjusted styles for h3 can go here */
 }
 
 p {
     position: relative;
     font-size: 22px;
     border-radius: 20px;
-    /* padding: 10px 10px; */
     z-index: 100;
 }
 
@@ -34,7 +32,6 @@ li {
     padding: 10px;
 }
 
-
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -43,8 +40,30 @@ hr {
     height: 2px;
 }
 
-
 input {
     border-radius: 20px; 
     padding: 10px 10px;
+}
+
+/* Media query for mobile and tablet devices */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 30px; /* Smaller font size for headings */
+    }
+
+    p {
+        font-size: 18px; /* Smaller font size for paragraphs */
+    }
+
+    button {
+        padding: 8px 20px; /* Adjusted padding for buttons */
+    }
+
+    li {
+        padding: 8px; /* Adjusted padding for list items */
+    }
+
+    input {
+        padding: 8px 8px; /* Adjusted padding for inputs */
+    }
 }
