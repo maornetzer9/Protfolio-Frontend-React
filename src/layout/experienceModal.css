@@ -1,0 +1,52 @@
+.experienceContainer {
+    display: flex;
+    align-items: center;
+}
+
+.experienceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+}
+
+.experienceButton {
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.experienceImage {
+    width: 930px;
+    height: 1000px;
+}
+
+.experienceImageRight {
+    width: 1060px;
+    height: 1000px;
+    background: #a3e9f2;
+}
+
+@media (max-width: 768px) {
+    .experienceContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experienceContent,
+    .experienceImage,
+    .experienceImageRight {
+        width: 90%;
+        margin: 20px;
+        height: auto;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .experienceContent, button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

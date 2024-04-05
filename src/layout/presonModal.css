@@ -1,0 +1,51 @@
+.personContainer {
+    background: white;
+    color: black;
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 50%;
+}
+
+.person-image img {
+    width: 970px;
+    height: 1000px;
+}
+
+.goal-image img {
+    width: 1110px;
+    margin-left: -200px;
+    height: 1000px;
+}
+
+@media (max-width: 768px) {
+    .personContainer {
+        flex-direction: column;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: auto;
+        padding: 20px;
+    }
+
+    .textContainer,
+    .person-image img,
+    .goal-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .textContainer {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}

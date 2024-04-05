@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    color: black;
+    /* font-weight: 500; */
+}
+
+h1, h2 {
+    font-size: 40px;
+}
+
+h3 {
+    /* font-size: 35px; */
+}
+
+p {
+    position: relative;
+    font-size: 22px;
+    border-radius: 20px;
+    /* padding: 10px 10px; */
+    z-index: 100;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 800;
+}
+
+li {
+    padding: 10px;
+}
+
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: lightgray;
+    border: none;
+    height: 2px;
+}
+
+
+input {
+    border-radius: 20px; 
+    padding: 10px 10px;
+}
