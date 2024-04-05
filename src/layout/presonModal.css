@@ -43,8 +43,9 @@
     }
 
     .textContainer {
-        font-weight: 100;
-        padding-bottom: 20px;
+        /* font-weight: 100; */
+        /* padding-bottom: 20px; */
         text-align: center;
+        margin-top: 50px;
     }
 }

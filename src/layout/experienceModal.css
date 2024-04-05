@@ -8,7 +8,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 100px;
 }
 
 .experienceButton {
@@ -43,7 +42,8 @@
         width: 90%;
         margin: 0px;
         height: auto;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
+        background: transparent;
         padding-top: 0px;
         text-align: center;
     }
@@ -54,6 +54,10 @@
     }
     
     .experienceImage {
+        background: #a3e9f2;
+
+        margin-top: 50px;
+        margin-bottom: -50px;
         width: 250px;
         height: 150px;
     }

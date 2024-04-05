@@ -48,22 +48,23 @@ input {
 /* Media query for mobile and tablet devices */
 @media (max-width: 768px) {
     h1, h2 {
-        font-size: 30px; /* Smaller font size for headings */
+        font-size: 30px; 
     }
 
     p {
-        font-size: 18px; /* Smaller font size for paragraphs */
+        font-size: 18px; 
+        font-weight: 700;
     }
 
     button {
-        padding: 8px 20px; /* Adjusted padding for buttons */
+        padding: 8px 20px; 
     }
 
     li {
-        padding: 8px; /* Adjusted padding for list items */
+        padding: 5px; 
     }
 
     input {
-        padding: 8px 8px; /* Adjusted padding for inputs */
+        padding: 8px 8px; 
     }
 }
