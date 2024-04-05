@@ -28,10 +28,8 @@
 
 @media (max-width: 768px) {
     .personContainer {
+        height: 800px !important;
         flex-direction: column;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
         height: auto;
         padding: 20px;
     }
