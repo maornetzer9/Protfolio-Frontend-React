@@ -8,10 +8,6 @@ h1, h2 {
     font-size: 40px;
 }
 
-h3 {
-    /* Adjusted styles for h3 can go here */
-}
-
 p {
     position: relative;
     font-size: 22px;
@@ -45,7 +41,6 @@ input {
     padding: 10px 10px;
 }
 
-/* Media query for mobile and tablet devices */
 @media (max-width: 768px) {
     h1, h2 {
         font-size: 30px; 
