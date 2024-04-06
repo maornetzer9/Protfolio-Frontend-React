@@ -18,7 +18,7 @@ export default function ContactUs({ scrollToTop = () => {} }) {
     {
         try
         {
-            const request = "http://localhost:5050/email";
+            const request = "https://portfolio-backend-react.onrender.com/email";
             const emailRegex = /\S+@\S+\.\S+/;
             const { message: userMessage, from, email } = contact;
 
