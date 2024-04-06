@@ -19,7 +19,7 @@ function Carousel( { onClick = () => {} } ) {
                             <div className="card" key={index}>
                                 <div className="card-body">
                                     <h3> {project.title} </h3>
-                                    <p> {project.description} </p>
+                                    {/* <p> {project.description} </p> */}
                                 </div>
                                 <img
                                     src={project.image}
