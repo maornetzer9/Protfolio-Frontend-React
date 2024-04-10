@@ -41,10 +41,10 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
                     <div 
                         dir="rtl" 
                         className="textContainer" 
-                        style={{ width: width, textAlign: 'center', alignItems: 'center' }}
+                        style={{ width: width, alignItems: 'center',  }}
                     >
                         <h1>{goal.title}</h1>
-                        <p>{goal.text}</p>
+                        <p style={{paddingRight:'50px'}}>{goal.text}</p>
                         <button onClick={onClick}>{goal.textButton}</button>
                     </div>
                 </div>

@@ -4,11 +4,13 @@
 }
 
 .experienceContent {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 5rem ;
 }
+
 
 .experienceButton {
     width: fit-content;
@@ -16,12 +18,12 @@
 }
 
 .experienceImage {
-    width: 930px;
+    width: 93.5%;
     height: 1000px;
 }
 
 .experienceImageRight {
-    width: 970px;
+    width: 51%;
     height: 1000px;
     background: #a3e9f2;
 }
@@ -34,6 +36,8 @@
 
     .experienceContent {
         height: 625px !important;
+        width: 100% !important;
+
     }
 
     .experienceContent,

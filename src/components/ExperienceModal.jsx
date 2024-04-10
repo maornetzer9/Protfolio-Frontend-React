@@ -26,7 +26,11 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                         <div>
                             <img src={image} alt={title} className="experienceImage" />
                         </div>
-                        <div className="experienceContent" dir="rtl">
+                        <div 
+                            dir="ltr" 
+                            className="experienceContent" 
+                            style={{padding: '0', width:'85%', display:'flex'}}
+                        >
                             <h2>{title}</h2>
                             <p>{subTitle}</p>
                             <ul>

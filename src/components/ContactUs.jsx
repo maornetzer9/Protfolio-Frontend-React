@@ -18,8 +18,8 @@ export default function ContactUs({ scrollToTop = () => {} }) {
     {
         try
         {
-            const request = "https://portfolio-backend-react.onrender.com/email";
             const emailRegex = /\S+@\S+\.\S+/;
+            const request = "https://portfolio-backend-react.onrender.com/email";
             const { message: userMessage, from, email } = contact;
 
             if ( !userMessage || !from || !email ) return alert('Missing required fields');
