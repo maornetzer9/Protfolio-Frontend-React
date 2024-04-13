@@ -1,20 +1,9 @@
 import React from 'react';
+import '../../layout/keyframes.css'
 
 const Loading = ({ duration = 2 }) => {
   return (
     <>
-      <style>
-        {`
-          @keyframes spin {
-            from {
-              transform: rotate(0deg);
-            }
-            to {
-              transform: rotate(360deg);
-            }
-          }
-        `}
-      </style>
       <div style={{
           display: 'flex',
           justifyContent: 'center',

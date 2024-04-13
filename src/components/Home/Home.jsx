@@ -9,7 +9,8 @@ export default function Home() {
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
     const scrollToNextComponent = (index) => {
-        if (index + 1 < componentRefs.current.length && componentRefs.current[index + 1]) {
+        if (index + 1 < componentRefs.current.length && componentRefs.current[index + 1]) 
+        {
             componentRefs.current[index + 1].scrollIntoView({ behavior: "smooth" });
         }
     };
