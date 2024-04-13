@@ -20,7 +20,7 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                 ({ image, title, subTitle, textButton, steps: { one, two, three, four } }, index) => (
                     <div key={index} className="experienceContainer">
                         <div>
-                            <img src={image} alt={title} className="experienceImage" />
+                            <img src={image} loading="lazy" alt={title} className="experienceImage" />
                         </div>
                         <div 
                             dir="ltr" 
@@ -47,7 +47,7 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                 ({ image, title, subTitle, textButton, steps: { one, two, three, four } }, index) => (
                     <div key={index} className="experienceContainer" dir="rtl">
                         <div className="experienceImageRight">
-                            <img src={image} alt={title} className="experienceImage" height={height}/>
+                            <img src={image} loading="lazy" alt={title} className="experienceImage" height={height}/>
                         </div>
                         <div className="experienceContent" dir="ltr">
                             <h2>{title}</h2>
