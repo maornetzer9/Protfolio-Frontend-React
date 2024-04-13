@@ -1,4 +1,6 @@
-import JOURNEY_IMAGE from '../images/Journey-Coding.png';
+import { BASE_URL } from '../mixins/s3Generator';
+
+const JOURNEY_IMAGE = `${BASE_URL}images/Journey-Coding.png`
 
 export const JOURNEY = [
     {

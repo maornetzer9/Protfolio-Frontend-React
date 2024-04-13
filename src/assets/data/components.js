@@ -9,7 +9,7 @@ import PersonModal from "../../components/Personal-Modal/PersonModal";
 import ExperienceModal from "../../components/Experience-Modal/ExperienceModal.jsx";
 import Carousel from "../../components/Carousel/Carousel.jsx";
 import ContactUs from "../../components/Contact-Us/ContactUs.jsx";
-// import Image from "../../components/Image";
+import Image from "../../components/Image";
 
 export const COMPONENTS = 
   [
@@ -21,6 +21,6 @@ export const COMPONENTS =
     { Component: Carousel, props: { snapCraftImage } },
     { Component: Carousel, props: { snapCraftVideo } },
     { Component: ContactUs, props: {} },
-    // { Component: Image, props: {} },
+    { Component: Image, props: {} },
   ];
   

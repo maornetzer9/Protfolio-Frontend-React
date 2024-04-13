@@ -1,4 +1,6 @@
-import tingGlobal from '../images/Ting-Global.png';
+import { BASE_URL } from '../mixins/s3Generator';
+
+const tingGlobal = `${BASE_URL}images/Ting-Global.png`
 
 export const EXPERIENCE = [
     {

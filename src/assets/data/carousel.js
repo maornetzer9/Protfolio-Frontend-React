@@ -1,18 +1,24 @@
-import pacManSign from '../images/gallery/fulls/PacMan-Sign.png';
-import pacManGame from '../images/gallery/fulls/PacMan-Game.png';
-import NetflixSign from '../images/gallery/fulls/Netflix-Sign.png';
-import NetflixAccounts from '../images/gallery/fulls/Netflix-Accounts-English.png';
-import TicTacToe from '../images/gallery/fulls/Tic-Tac-Toe.png';
-import NetflixEnglish from '../images/gallery/fulls/Netflix-English.png';
-import NetflixHebrew from '../images/gallery/fulls/Netflix-Hebrew.png';
-import NetflixPopup from '../images/gallery/fulls/Netflix-Popup.png';
+// S3 Cloud Base Url
+import { BASE_URL } from "../mixins/s3Generator";
 
-import DemoECommerceDesktop from '../videos/Demo-E-Commerce-Desktop.mp4'
-import DemoECommerceMobile from '../videos/Demo-E-Commerce-Mobile.mp4'
-import DemoTrainerDesktop from '../videos/Demo-Trainer-Desktop.mp4'
-import DemoTrainerMobile from '../videos/Demo-Trainer-Mobile.mp4'
+// Images
+const pacManSign = `${BASE_URL}images/gallery/fulls/PacMan-Sign.png`;
+const pacManGame = `${BASE_URL}images/gallery/fulls/PacMan-Game.png`;
+const NetflixSign = `${BASE_URL}images/gallery/fulls/Netflix-Sign.png`;
+const NetflixAccounts = `${BASE_URL}images/gallery/fulls/Netflix-Accounts-English.png`;
+const TicTacToe = `${BASE_URL}images/gallery/fulls/Tic-Tac-Toe.png`;
+const NetflixEnglish = `${BASE_URL}images/gallery/fulls/Netflix-English.png`;
+const NetflixHebrew = `${BASE_URL}images/gallery/fulls/Netflix-Hebrew.png`;
+const NetflixPopup = `${BASE_URL}images/gallery/fulls/Netflix-Popup.png`;
+
+// Videos
+const DemoECommerceDesktop = `${BASE_URL}videos/Demo-E-Commerce-Desktop.mp4`;
+const DemoECommerceMobile = `${BASE_URL}videos/Demo-E-Commerce-Mobile.mp4`;
+const DemoTrainerDesktop = `${BASE_URL}videos/Demo-Trainer-Desktop.mp4`;
+const DemoTrainerMobile = `${BASE_URL}videos/Demo-Trainer-Mobile.mp4`;
 
 
+// Images
 export const snapCraftImage = [ 
     {
         title: 'Tic-Tac-Toe',
@@ -56,6 +62,7 @@ export const snapCraftImage = [
     },
 ]
 
+// Videos
 export const snapCraftVideo = [
     {
         title: 'Landing Page E-Commerce Desktop',
@@ -75,6 +82,7 @@ export const snapCraftVideo = [
     },
 ];
 
+// Scroller Settings
 export const settings = {
     dots: true,
     infinite: true,
@@ -112,6 +120,8 @@ export const settings = {
     ]
 };
 
+
+// Arrow Right Settings
 export function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -132,6 +142,7 @@ export function SampleNextArrow(props) {
     );
 }
 
+// Arrow Left Settings
 export function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (

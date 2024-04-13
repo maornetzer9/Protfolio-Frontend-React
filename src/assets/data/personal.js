@@ -1,4 +1,6 @@
-import GreetingsImage from '../images/Greetings-Section.png';
+import { BASE_URL } from '../mixins/s3Generator';
+
+const GreetingsImage = `${BASE_URL}images/Greetings-Section.png`
 
 export const PERSONAL = [
     {

@@ -1,4 +1,6 @@
-import goals from '../images/My-Goals.jpg'
+import { BASE_URL } from '../mixins/s3Generator'
+
+const goals = `${BASE_URL}images/My-Goals.jpg`
 
 export const GOALS = [
     { 
