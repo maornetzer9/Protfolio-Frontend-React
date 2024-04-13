@@ -1,38 +1,48 @@
-// LazyLoadModal.js
 import React, { useEffect, useRef, useState, forwardRef } from 'react';
+import Loading from '../Loading/Loading';
 
 const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
-    const elementRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
-    const combinedRef = ref || elementRef; // Use provided ref or local ref
+    const internalRef = useRef(null);
+
+    // Combined ref function that updates both internal and forwarded ref
+    const setRef = (node) => {
+        internalRef.current = node;
+        if (typeof ref === 'function') {
+            ref(node);
+        } else if (ref) {
+            ref.current = node;
+        }
+    };
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
+            console.log("Observation:", entries);  // Log entries to see what's being observed
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
-
-        const currentElement = combinedRef.current;
+        }, { threshold: 0.3 });
+    
+        const currentElement = internalRef.current;
         if (currentElement) {
             observer.observe(currentElement);
         }
-
+    
         return () => {
             if (currentElement) {
                 observer.unobserve(currentElement);
             }
         };
-    }, [combinedRef]);
+    }, [internalRef]); // Use internalRef directly
 
-    const Tag = as; // Allows the component to use any tag type
+    const Tag = as;
 
     return (
-        <Tag ref={combinedRef} {...props}>
-            { !isVisible ? children : <div>Loading...</div>}
+        <Tag ref={setRef} {...props}>
+            {isVisible ? children : <Loading />}
         </Tag>
     );
 });

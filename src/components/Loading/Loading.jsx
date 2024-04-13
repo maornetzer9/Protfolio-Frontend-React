@@ -28,7 +28,7 @@ const Loading = () => (
                 border: '5px solid #f3f3f3', 
                 borderTop: '5px solid #3498db', 
                 borderRadius: '50%',
-                animation: 'spin 2s linear infinite' // CSS animation for spinning
+                animation: 'spin 2s linear infinite'
             }}></div>
         </div>
     </div>

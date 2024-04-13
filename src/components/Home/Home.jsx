@@ -4,7 +4,7 @@ import Loading from '../Loading/Loading';
 import LazyLoadModal from '../Lazy-Load-Modal/LazyLoadModal';
 
 export default function Home() {
-    const componentRefs = useRef([]); // Use useRef to hold an array of refs
+    const componentRefs = useRef([]);
 
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
