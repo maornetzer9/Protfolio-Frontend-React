@@ -3,11 +3,13 @@ import { PERSONAL } from "./personal";
 import { EXPERIENCE } from "./experience";
 import { GOALS } from "./goals";
 import { SKILLS } from "./skills";
+import { snapCraftImage, snapCraftVideo } from "./carousel.js";
 
-import PersonModal from "../../components/PersonModal";
-import ExperienceModal from "../../components/ExperienceModal";
-import Carousel from "../../components/Carousel";
-import ContactUs from "../../components/ContactUs";
+import PersonModal from "../../components/Personal-Modal/PersonModal";
+import ExperienceModal from "../../components/Experience-Modal/ExperienceModal.jsx";
+import Carousel from "../../components/Carousel/Carousel.jsx";
+import ContactUs from "../../components/Contact-Us/ContactUs.jsx";
+// import Image from "../../components/Image";
 
 export const COMPONENTS = 
   [
@@ -16,7 +18,9 @@ export const COMPONENTS =
     { Component: ExperienceModal, props: { EXPERIENCE } },
     { Component: PersonModal, props: { GOALS } },
     { Component: PersonModal, props: { SKILLS } },
-    { Component: Carousel, props: {} },
+    { Component: Carousel, props: { snapCraftImage } },
+    { Component: Carousel, props: { snapCraftVideo } },
     { Component: ContactUs, props: {} },
+    // { Component: Image, props: {} },
   ];
   

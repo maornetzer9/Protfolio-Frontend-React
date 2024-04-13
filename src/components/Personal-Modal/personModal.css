@@ -1,0 +1,49 @@
+.personContainer {
+    background: white;
+    color: black;
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 1000px;
+    width: 50%;
+}
+
+.person-image img {
+    width: 83.5%;
+    height: 1000px;
+}
+
+.goal-image img {
+    width: 85%;
+    height: 1000px;
+}
+
+@media (max-width: 768px) {
+    .personContainer {
+        height: 640px !important;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .textContainer,
+    .person-image img,
+    .goal-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .textContainer {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
