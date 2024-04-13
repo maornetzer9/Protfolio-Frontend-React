@@ -1,18 +1,20 @@
-import { JOURNEY } from "./journey";
-import { PERSONAL } from "./personal";
-import { EXPERIENCE } from "./experience";
-import { GOALS } from "./goals";
-import { SKILLS } from "./skills";
-import { snapCraftImage, snapCraftVideo } from "./carousel.js";
+// Using React.lazy to dynamically import components
+import React from 'react';
+import { JOURNEY } from './journey';
+import { PERSONAL } from './personal';
+import { EXPERIENCE } from './experience';
+import { GOALS } from './goals';
+import { SKILLS } from './skills';
+import { snapCraftImage, snapCraftVideo } from "./carousel";
 
-import PersonModal from "../../components/Personal-Modal/PersonModal";
-import ExperienceModal from "../../components/Experience-Modal/ExperienceModal.jsx";
-import Carousel from "../../components/Carousel/Carousel.jsx";
-import ContactUs from "../../components/Contact-Us/ContactUs.jsx";
-import Image from "../../components/Image";
+const PersonModal = React.lazy(() => import('../../components/Personal-Modal/PersonModal'));
+const ExperienceModal = React.lazy(() => import('../../components/Experience-Modal/ExperienceModal'));
+const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'));
+const ContactUs = React.lazy(() => import('../../components/Contact-Us/ContactUs'));
+const Image = React.lazy(() => import('../../components/Image'));
 
-export const COMPONENTS = 
-  [
+
+export const COMPONENTS = [
     { Component: PersonModal, props: { PERSONAL } },
     { Component: ExperienceModal, props: { JOURNEY } },
     { Component: ExperienceModal, props: { EXPERIENCE } },
@@ -22,5 +24,4 @@ export const COMPONENTS =
     { Component: Carousel, props: { snapCraftVideo } },
     { Component: ContactUs, props: {} },
     { Component: Image, props: {} },
-  ];
-  
+];

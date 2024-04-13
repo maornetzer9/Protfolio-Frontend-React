@@ -1,37 +1,32 @@
-import React from "react";
+import React, { useRef } from 'react';
 import { COMPONENTS } from "../../assets/data/components";
-import Section from "../Section/Section";
+import Loading from '../Loading/Loading';
+import LazyLoadModal from '../Lazy-Load-Modal/LazyLoadModal';
 
 export default function Home() {
-    const componentRefs = [];
-
-    const setRef = (index, el) => (componentRefs[index] = el);
+    const componentRefs = useRef([]); // Use useRef to hold an array of refs
 
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
     const scrollToNextComponent = (index) => {
-        if (index + 1 < componentRefs.length && componentRefs[index + 1]) {
-            componentRefs[index + 1].scrollIntoView({ behavior: "smooth" });
+        if (index + 1 < componentRefs.current.length && componentRefs.current[index + 1]) {
+            componentRefs.current[index + 1].scrollIntoView({ behavior: "smooth" });
         }
     };
-    
 
     return (
         <div>
-            {COMPONENTS.length ?
-                COMPONENTS.map((target, index) => (
-                    <Section 
-                        key={index} 
-                        ref={(el) => setRef(index, el)}
-                    >
+            <React.Suspense fallback={<Loading />}>
+                {COMPONENTS.map((target, index) => (
+                    <LazyLoadModal key={index} as="section" ref={(el) => componentRefs.current[index] = el}>
                         <target.Component
                             {...target.props}
                             onClick={() => scrollToNextComponent(index)}
                             scrollToTop={scrollToTop}
                         />
-                    </Section>
-                )) 
-                : null } 
+                    </LazyLoadModal>
+                ))}
+            </React.Suspense>
         </div>
     );
 }
