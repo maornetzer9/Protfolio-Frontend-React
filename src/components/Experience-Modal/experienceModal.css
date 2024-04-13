@@ -32,17 +32,20 @@
     .experienceContainer {
         display: flex;
         flex-direction: column;
+        overflow-y: hidden;
+
 
     }
 
     .experienceContent {
         height: 625px !important;
-        width: 100% !important;
+    }
 
+    .experienceImage {
+        margin-top: 0px !important;
     }
 
     .experienceContent,
-    .experienceImage,
     .experienceImageRight {
         width: 90%;
         margin: 0px;
