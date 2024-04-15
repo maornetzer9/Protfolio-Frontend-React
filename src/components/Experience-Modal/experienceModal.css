@@ -46,7 +46,7 @@
     }
 
     .experienceImageRight {
-        height: 250px !important;
+        height: 100% !important;
         width: 100% !important;
     }
 
@@ -71,10 +71,6 @@
         align-items: center;
     }
     
-    .experienceContent > h2 {
-        height:40px;
-    }
-
     .experienceButton {
         margin-bottom: 10px;
     }
