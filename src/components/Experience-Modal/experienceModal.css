@@ -11,7 +11,7 @@
 }
 
 .journeyContent {
-    width: 85%;
+    /* width: 85%; */
 }
 
 .experienceButton {
@@ -21,13 +21,13 @@
 
 .experienceImage {
     padding: 0;
-    width: 93.5%;
+    width: 71%;
     height: 1000px;
 }
 
 .experienceImageRight {
     width: 51%;
-    height: 1000px;
+    height: 100%;
     background: #a3e9f2;
 }
 
@@ -46,7 +46,7 @@
     }
 
     .experienceImageRight {
-        height: 100% !important;
+        height: 280px !important;
         width: 100% !important;
     }
 
