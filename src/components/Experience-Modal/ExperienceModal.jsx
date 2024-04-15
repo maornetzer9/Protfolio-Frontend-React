@@ -30,7 +30,6 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                         <div 
                             dir="ltr" 
                             className="journeyContent" 
-                            // style={{padding: '0', width:'85%', display:'flex'}} 
                         >
                             <h2>{title}</h2>
                             <p>{subTitle}</p>

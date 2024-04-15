@@ -16,8 +16,6 @@ p {
 }
 
 button {
-    background-color: gray;
-    color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
