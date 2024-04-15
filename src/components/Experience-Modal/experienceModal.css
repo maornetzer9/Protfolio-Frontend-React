@@ -4,13 +4,15 @@
 }
 
 .experienceContent {
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 5rem ;
 }
 
+.journeyContent {
+    width: 85%;
+}
 
 .experienceButton {
     width: fit-content;
@@ -18,6 +20,7 @@
 }
 
 .experienceImage {
+    padding: 0;
     width: 93.5%;
     height: 1000px;
 }
@@ -33,39 +36,47 @@
         display: flex;
         flex-direction: column;
         overflow-y: hidden;
-
-
-    }
-
-    .experienceContent {
-        height: 625px !important;
     }
 
     .experienceImage {
+        background: #a3e9f2;
+        width: 100% !important;
+        height: 100% !important;
         margin-top: 0px !important;
+    }
+
+    .experienceImageRight {
+        height: 250px !important;
+        width: 100% !important;
+    }
+
+    .journeyContent {
+        text-align: center;
     }
 
     .experienceContent,
     .experienceImageRight {
-        width: 90%;
-        margin: 0px;
         height: auto;
-        padding-bottom: 0px;
-        background: transparent;
+        margin: 0px;
+        width: 90%;
         padding-top: 0px;
+        padding-bottom: 0px;
         text-align: center;
+        background: transparent;
     }
-    .experienceContent, button, p{
+
+    .experienceContent >, button, p{
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    .experienceImage {
-        background: #a3e9f2;
-        margin-top: 60px;
-        margin-bottom: -60px;
-        width: 250px;
-        height: 150px;
+    .experienceContent > h2 {
+        height:40px;
     }
+
+    .experienceButton {
+        margin-bottom: 10px;
+    }
+
 }

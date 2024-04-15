@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./experienceModal.css"; // Import the CSS file
+import "./experienceModal.css"; 
 
 export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPERIENCE = [] }) {
 
@@ -20,12 +20,17 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                 ({ image, title, subTitle, textButton, steps: { one, two, three, four } }, index) => (
                     <div key={index} className="experienceContainer">
                         <div>
-                            <img src={image} loading="lazy" alt={title} className="experienceImage" />
+                            <img 
+                                src={image} 
+                                alt={title} 
+                                loading="lazy" 
+                                className="experienceImage" 
+                            />
                         </div>
                         <div 
                             dir="ltr" 
-                            className="experienceContent" 
-                            style={{padding: '0', width:'85%', display:'flex'}}
+                            className="journeyContent" 
+                            // style={{padding: '0', width:'85%', display:'flex'}} 
                         >
                             <h2>{title}</h2>
                             <p>{subTitle}</p>
@@ -47,7 +52,13 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                 ({ image, title, subTitle, textButton, steps: { one, two, three, four } }, index) => (
                     <div key={index} className="experienceContainer" dir="rtl">
                         <div className="experienceImageRight">
-                            <img src={image} loading="lazy" alt={title} className="experienceImage" height={height}/>
+                            <img 
+                                src={image} 
+                                alt={title} 
+                                loading="lazy" 
+                                className="experienceImage" 
+                                height={height}
+                            />
                         </div>
                         <div className="experienceContent" dir="ltr">
                             <h2>{title}</h2>

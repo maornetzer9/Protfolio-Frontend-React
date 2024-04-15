@@ -28,10 +28,11 @@
 
 @media (max-width: 768px) {
     .personContainer {
-        height: 640px !important;
+        margin-bottom: 85px;
+        height: fit-content;
         flex-direction: column;
-        height: auto;
-        padding: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .textContainer,
@@ -43,6 +44,7 @@
     }
 
     .textContainer {
+        width: 95%;
         text-align: center;
         margin-top: 50px;
     }

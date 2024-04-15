@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState, forwardRef } from 'react';
 import Loading from '../Loading/Loading';
+import React, { useEffect, useRef, useState, forwardRef } from 'react';
 
 const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +12,8 @@ const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
         if (typeof ref === 'function') 
         {
             ref(node);
-        } else if (ref) 
+        } 
+        else if (ref) 
         {
             ref.current = node;
         }
@@ -21,7 +22,7 @@ const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if (entry) {
                     const loadEndTime = Date.now();
                     const duration = (loadEndTime - loadStartTime.current) / 1000;
                     setLoadingDuration(duration);

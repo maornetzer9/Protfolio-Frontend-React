@@ -19,7 +19,11 @@ export default function Home() {
         <div>
             <React.Suspense fallback={<Loading />}>
                 {COMPONENTS.map((target, index) => (
-                    <LazyLoadModal key={index} as="section" ref={(el) => componentRefs.current[index] = el}>
+                    <LazyLoadModal 
+                        as="section" 
+                        key={index} 
+                        ref={(el) => componentRefs.current[index] = el}
+                    >
                         <target.Component
                             {...target.props}
                             onClick={() => scrollToNextComponent(index)}

@@ -1,11 +1,11 @@
 import { BASE_URL } from '../mixins/s3Generator';
 
 const JOURNEY_IMAGE = `${BASE_URL}images/Journey-Coding.png`
-
+    
 export const JOURNEY = [
     {
         title: 'Journey into code',
-        subTitle: 'Hello! I`m a junior full stack developer, and here`s a snapshot of my coding journey.',
+        subTitle: 'Hello! I`m a full stack developer, and here`s a snapshot of my coding journey.',
         textButton: 'Next Section',
         image: JOURNEY_IMAGE,
         steps: {
