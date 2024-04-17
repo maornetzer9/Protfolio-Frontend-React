@@ -5,12 +5,13 @@ import { EXPERIENCE } from './experience';
 import { GOALS } from './goals';
 import { SKILLS } from './skills';
 import { snapCraftImage, snapCraftVideo } from "./carousel";
+import WhatsAppButton from '../../components/Floating-Button/WhatsAppButton';
 
 // Using React.lazy to dynamically import components
-const PersonModal = React.lazy(() => import('../../components/Personal-Modal/PersonModal'));
+const PersonModal     = React.lazy(() => import('../../components/Personal-Modal/PersonModal'));
 const ExperienceModal = React.lazy(() => import('../../components/Experience-Modal/ExperienceModal'));
-const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'));
-const ContactUs = React.lazy(() => import('../../components/Contact-Us/ContactUs'));
+const Carousel        = React.lazy(() => import('../../components/Carousel/Carousel'));
+const ContactUs       = React.lazy(() => import('../../components/Contact-Us/ContactUs'));
 
 
 export const COMPONENTS = [
@@ -22,4 +23,5 @@ export const COMPONENTS = [
     { Component: Carousel, props: { snapCraftImage } },
     { Component: Carousel, props: { snapCraftVideo } },
     { Component: ContactUs, props: {} },
+    { Component: WhatsAppButton, props: {} },
 ];
