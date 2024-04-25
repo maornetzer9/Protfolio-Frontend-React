@@ -1,7 +1,23 @@
 import { BASE_URL } from '../mixins/s3Generator';
 
+// Image from S3 Cloud 
 const tingGlobal = `${BASE_URL}images/Ting-Global.png`
 
+
+/**
+ * @typedef  { Object } Experience
+ * @property { string } image - The relative path to the image.
+ * @property { string } title - A brief title to describing the section.
+ * @property { string } textButton - Label text for the button.
+ * @property { Object, < string > } steps - An Object that contain my steps of working experience. 
+ */
+
+/**
+ *  @type { Experience [] } - Contains data for the experience sections.
+ */
+
+
+// Data of experience section
 export const EXPERIENCE = [
     {
         title: 'Working Experience',

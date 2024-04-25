@@ -14,6 +14,7 @@ const Carousel        = React.lazy(() => import('../../components/Carousel/Carou
 const ContactUs       = React.lazy(() => import('../../components/Contact-Us/ContactUs'));
 
 
+// Array of all the components 
 export const COMPONENTS = [
     { Component: PersonModal, props: { PERSONAL } },
     { Component: ExperienceModal, props: { JOURNEY } },

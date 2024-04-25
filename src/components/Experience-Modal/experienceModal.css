@@ -11,7 +11,8 @@
 }
 
 .journeyContent {
-    width: 95%;
+    width: 89%;
+    margin-left: 50px;
 }
 
 .experienceButton {
@@ -53,6 +54,7 @@
 
     .journeyContent {
         text-align: center;
+        margin-left: 0px;
     }
 
     .experienceContent,

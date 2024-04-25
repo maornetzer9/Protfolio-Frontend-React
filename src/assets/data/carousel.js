@@ -16,6 +16,7 @@ const DemoECommerceDesktop = `${BASE_URL}videos/Demo-E-Commerce-Desktop.mp4`;
 const DemoECommerceMobile = `${BASE_URL}videos/Demo-E-Commerce-Mobile.mp4`;
 const DemoTrainerDesktop = `${BASE_URL}videos/Demo-Trainer-Desktop.mp4`;
 const DemoTrainerMobile = `${BASE_URL}videos/Demo-Trainer-Mobile.mp4`;
+const PortfolioMobile = `${BASE_URL}videos/Portfolio-Mobile.mp4`;
 
 
 // Images
@@ -79,6 +80,10 @@ export const snapCraftVideo = [
     {
         title: 'Landing Page Trainer Mobile',
         src: DemoTrainerMobile 
+    },
+    {
+        title: 'Portfolio Mobile',
+        src: PortfolioMobile 
     },
 ];
 
