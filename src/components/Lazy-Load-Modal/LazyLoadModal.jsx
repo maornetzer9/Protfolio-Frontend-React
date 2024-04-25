@@ -22,7 +22,8 @@ const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                if (entry) {
+                if (entry.isIntersecting) 
+                {
                     const loadEndTime = Date.now();
                     const duration = (loadEndTime - loadStartTime.current) / 1000;
                     setLoadingDuration(duration);
@@ -30,7 +31,7 @@ const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.9 });
 
         const currentElement = internalRef.current;
         if (currentElement) 
@@ -49,7 +50,7 @@ const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {
     const Tag = as;
 
     return (
-        <Tag ref={setRef} {...props}>
+        <Tag ref={setRef} {...props} as={as}>
             {isVisible ? children : <Loading duration={loadingDuration} />}
         </Tag>
     );

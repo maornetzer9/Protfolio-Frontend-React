@@ -33,6 +33,7 @@
 
 @media (max-width: 768px) {
     .experienceContainer {
+        padding: 20px;
         display: flex;
         flex-direction: column;
         overflow-y: hidden;
