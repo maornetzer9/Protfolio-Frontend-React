@@ -1,7 +1,7 @@
-import { BASE_URL } from '../mixins/s3Generator'
+import { S3_CLOUD_URL } from "../../env"
 
 // Image From S3 Cloud
-const goals = `${BASE_URL}images/My-Goals.jpg`
+const goals = `${S3_CLOUD_URL}images/My-Goals.jpg`
 
 /**
  * @typedef { Object } Goal

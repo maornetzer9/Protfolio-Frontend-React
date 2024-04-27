@@ -20,7 +20,6 @@ export default function Home() {
             <React.Suspense fallback={<Loading />}>
                 {COMPONENTS.map((target, index) => (
                     <LazyLoadModal 
-                        as="div" 
                         key={index} 
                         ref={(el) => componentRefs.current[index] = el}
                     >

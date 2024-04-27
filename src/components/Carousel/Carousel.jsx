@@ -7,6 +7,7 @@ import { settings } from "../../assets/data/carousel";
 import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
 
 function Carousel({ onClick, snapCraftImage = [], snapCraftVideo = [] }) {
+
     const renderImages = () =>
         snapCraftImage.map((project, index) => (
             <LazyLoadModal key={index} as="div" className="card">
@@ -52,8 +53,8 @@ function Carousel({ onClick, snapCraftImage = [], snapCraftVideo = [] }) {
                     SnapCraft by Maor - An Journey Through Moments 
                 </h2>
                 <Slider {...settings}>
-                    {renderImages()}
-                    {renderVideos()}
+                    { renderImages() }
+                    { renderVideos() }
                 </Slider>
                 <div className="section-button">
                     <button onClick={onClick}>Next Section</button>

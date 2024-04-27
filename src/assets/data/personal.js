@@ -1,6 +1,6 @@
-import { BASE_URL } from '../mixins/s3Generator';
+import { S3_CLOUD_URL } from "../../env"
 
-const GreetingsImage = `${BASE_URL}images/Greetings-Section.png`
+const GreetingsImage = `${S3_CLOUD_URL}images/Greetings-Section.png`
 
 export const PERSONAL = [
     {

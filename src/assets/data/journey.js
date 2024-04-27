@@ -1,6 +1,6 @@
-import { BASE_URL } from '../mixins/s3Generator';
+import { S3_CLOUD_URL } from "../../env"
 
-const JOURNEY_IMAGE = `${BASE_URL}images/Journey-Coding.png`
+const JOURNEY_IMAGE = `${S3_CLOUD_URL}images/Journey-Coding.png`
     
 export const JOURNEY = [
     {

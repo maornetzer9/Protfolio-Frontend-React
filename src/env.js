@@ -1,0 +1,1 @@
+export const S3_CLOUD_URL = "https://elasticbeanstalk-us-east-1-851725376560.s3.amazonaws.com/assets/";

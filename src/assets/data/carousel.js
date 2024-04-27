@@ -1,23 +1,22 @@
 // S3 Cloud Base Url
-import { BASE_URL } from "../mixins/s3Generator";
+import { S3_CLOUD_URL } from "../../env";
 
 // Images
-const pacManSign = `${BASE_URL}images/gallery/fulls/PacMan-Sign.png`;
-const pacManGame = `${BASE_URL}images/gallery/fulls/PacMan-Game.png`;
-const NetflixSign = `${BASE_URL}images/gallery/fulls/Netflix-Sign.png`;
-const NetflixAccounts = `${BASE_URL}images/gallery/fulls/Netflix-Accounts-English.png`;
-const TicTacToe = `${BASE_URL}images/gallery/fulls/Tic-Tac-Toe.png`;
-const NetflixEnglish = `${BASE_URL}images/gallery/fulls/Netflix-English.png`;
-const NetflixHebrew = `${BASE_URL}images/gallery/fulls/Netflix-Hebrew.png`;
-const NetflixPopup = `${BASE_URL}images/gallery/fulls/Netflix-Popup.png`;
+const pacManSign = `${S3_CLOUD_URL}images/gallery/fulls/PacMan-Sign.png`;
+const pacManGame = `${S3_CLOUD_URL}images/gallery/fulls/PacMan-Game.png`;
+const NetflixSign = `${S3_CLOUD_URL}images/gallery/fulls/Netflix-Sign.png`;
+const NetflixAccounts = `${S3_CLOUD_URL}images/gallery/fulls/Netflix-Accounts-English.png`;
+const TicTacToe = `${S3_CLOUD_URL}images/gallery/fulls/Tic-Tac-Toe.png`;
+const NetflixEnglish = `${S3_CLOUD_URL}images/gallery/fulls/Netflix-English.png`;
+const NetflixHebrew = `${S3_CLOUD_URL}images/gallery/fulls/Netflix-Hebrew.png`;
+const NetflixPopup = `${S3_CLOUD_URL}images/gallery/fulls/Netflix-Popup.png`;
 
 // Videos
-const DemoECommerceDesktop = `${BASE_URL}videos/Demo-E-Commerce-Desktop.mp4`;
-const DemoECommerceMobile = `${BASE_URL}videos/Demo-E-Commerce-Mobile.mp4`;
-const DemoTrainerDesktop = `${BASE_URL}videos/Demo-Trainer-Desktop.mp4`;
-const DemoTrainerMobile = `${BASE_URL}videos/Demo-Trainer-Mobile.mp4`;
-const PortfolioMobile = `${BASE_URL}videos/Portfolio-Mobile.mp4`;
-
+const DemoECommerceDesktop = `${S3_CLOUD_URL}videos/Demo-E-Commerce-Desktop.mp4`;
+const DemoECommerceMobile = `${S3_CLOUD_URL}videos/Demo-E-Commerce-Mobile.mp4`;
+const DemoTrainerDesktop = `${S3_CLOUD_URL}videos/Demo-Trainer-Desktop.mp4`;
+const DemoTrainerMobile = `${S3_CLOUD_URL}videos/Demo-Trainer-Mobile.mp4`;
+const PortfolioMobile = `${S3_CLOUD_URL}videos/Portfolio-Mobile.mp4`;
 
 // Images
 export const snapCraftImage = [ 
