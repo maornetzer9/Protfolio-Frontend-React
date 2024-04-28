@@ -5,7 +5,7 @@ import { EXPERIENCE } from './experience';
 import { GOALS } from './goals';
 import { SKILLS } from './skills';
 import { snapCraftImage, snapCraftVideo } from "./carousel";
-import WhatsAppButton from '../../components/Floating-Button/WhatsAppButton';
+import WhatsAppButton from '../../components/Whatsapp-Button/WhatsAppButton';
 
 // Using React.lazy to dynamically import components
 const PersonModal     = React.lazy(() => import('../../components/Personal-Modal/PersonModal'));

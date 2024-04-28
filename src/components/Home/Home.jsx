@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import { COMPONENTS } from "../../assets/data/components";
 import Loading from '../Loading/Loading';
-import LazyLoadModal from '../Lazy-Load-Modal/LazyLoadModal';
+import { COMPONENTS } from "../../assets/data/components";
+import LazyLoadModal from '../../UI/Lazy-Load-Modal/LazyLoadModal';
 import ResponsiveProvider from '../../context/ResponsiveProvider';
 
 export default function Home() {

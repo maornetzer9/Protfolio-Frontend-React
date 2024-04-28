@@ -1,4 +1,4 @@
-import Loading from '../Loading/Loading';
+import Loading from '../../components/Loading/Loading';
 import React, { useEffect, useRef, useState, forwardRef } from 'react';
 
 const LazyLoadModal = forwardRef(({ children, as = 'div', ...props }, ref) => {

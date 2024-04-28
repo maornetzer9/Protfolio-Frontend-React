@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./experienceModal.css"; 
-import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
+import LazyLoadModal from "../../UI/Lazy-Load-Modal/LazyLoadModal";
 
 export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPERIENCE = [] }) {
 
@@ -51,7 +51,7 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
             )}
 
             {EXPERIENCE.map(
-                ({ image, title, subTitle, textButton, steps: { one, two, three, four } }, index) => (
+                ({ image, title, subTitle, textButton, steps: { one, two, three, four, five } }, index) => (
                     <LazyLoadModal key={index}>
                     <div key={index} className="experienceContainer" dir="rtl">
                         <div className="experienceImageRight">
@@ -71,6 +71,7 @@ export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPE
                                 <li>{two}</li>
                                 <li>{three}</li>
                                 <li>{four}</li>
+                                <li>{five}</li>
                             </ul>
                             <button onClick={onClick} className="experienceButton">
                                 {textButton}

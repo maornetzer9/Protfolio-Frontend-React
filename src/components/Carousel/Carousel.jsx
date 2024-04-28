@@ -4,7 +4,7 @@ import "./carousel.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { settings } from "../../assets/data/carousel";
-import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
+import LazyLoadModal from "../../UI/Lazy-Load-Modal/LazyLoadModal";
 
 function Carousel({ onClick, snapCraftImage = [], snapCraftVideo = [] }) {
 

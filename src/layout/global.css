@@ -17,9 +17,15 @@ p {
 
 button {
     border: none;
+    cursor: pointer;
     border-radius: 20px;
     padding: 10px 20px;
     font-weight: 800;
+    transition: 0.7s;
+}
+
+button:hover {
+    color: #007bff;
 }
 
 li {

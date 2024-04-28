@@ -25,11 +25,18 @@
 }
 
 .linkButton {
-    background-color: transparent;
     color: initial;
+    background-color: transparent;
     border: 1px solid black;
     border-radius: 50px;
     padding: 20px 20px;
+    transition: 0.5s;
+}
+
+.linkButton:hover {
+    background-color: #4c9cd4;
+    border: 1px solid #4c9cd4 ;
+    color: white;
 }
 
 @media (max-width: 768px) {

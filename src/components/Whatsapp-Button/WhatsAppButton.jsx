@@ -3,6 +3,7 @@ import { BiLogoWhatsapp } from "react-icons/bi";
 import './whatsAppButton.css';
 
 function WhatsAppButton() {
+    
   const phoneNumber = '972546605111'; 
   const message = encodeURIComponent("I'm interested in your services"); 
 

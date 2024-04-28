@@ -1,5 +1,5 @@
 import "./personModal.css";
-import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
+import LazyLoadModal from "../../UI/Lazy-Load-Modal/LazyLoadModal";
 import React, { useEffect, useState } from "react";
 
 export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS = [], SKILLS = [] }) {
@@ -57,10 +57,7 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
                         >
                             <h1>{goal.title}</h1>
                             <p
-                                style={{
-                                    paddingRight:
-                                        window.innerWidth <= 768 ? 0 : 50,
-                                }}
+                                style={{ paddingRight: window.innerWidth <= 768 ? 0 : 70 }}
                             >
                                 {goal.text}
                             </p>

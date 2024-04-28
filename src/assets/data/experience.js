@@ -25,10 +25,11 @@ export const EXPERIENCE = [
         image: tingGlobal,
         steps: 
         {
-            one: 'I Contributed as a FullStack Developer, managing both frontend and backend development responsibilities.',
-            two: 'Integrated ChatGPT with WhatsApp groups, enhancing user engagement by providing random questions.',
+            one:   'I Contributed as a FullStack Developer, managing both frontend and backend development responsibilities.',
+            two:   'Integrated AI with WhatsApp groups, enhancing user engagement by providing random questions.',
             three: 'Developed a frontend explanation page that seamlessly integrates with Facebook, ensuring a user-friendly.',
-            four: 'Created Challenges Group, integrating with Telegram groups, promoting user participation and interaction.'
+            four:  'Created Challenges Group, integrating with Telegram groups, promoting user participation and interaction.',
+            five:  "As a Full Stack Developer, I managed project timelines and led a team to meet strict deadlines. I streamlined the GitHub workflow, enhancing collaboration and version control, and consistently achieved production targets on schedule."
         }
     }
 ];
