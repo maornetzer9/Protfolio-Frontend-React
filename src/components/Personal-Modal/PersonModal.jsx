@@ -1,7 +1,7 @@
 import "./personModal.css";
 import LazyLoadModal from "../../UI/Lazy-Load-Modal/LazyLoadModal";
 import React, { useEffect, useState } from "react";
-import { CacheImageModal } from "../Use-Cache-Image/UseCacheImage";
+import { CacheImageModal } from "../Cache-Image-Modal/CacheImageModal";
 
 export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS = [], SKILLS = [] }) {
 

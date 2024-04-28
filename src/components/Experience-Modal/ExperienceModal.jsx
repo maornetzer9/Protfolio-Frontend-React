@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./experienceModal.css"; 
 import LazyLoadModal from "../../UI/Lazy-Load-Modal/LazyLoadModal";
-import { CacheImageModal } from "../Use-Cache-Image/UseCacheImage";
+import { CacheImageModal } from "../Cache-Image-Modal/CacheImageModal";
 
 export default function ExperienceModal({ onClick = () => {}, JOURNEY = [], EXPERIENCE = [] }) {
 

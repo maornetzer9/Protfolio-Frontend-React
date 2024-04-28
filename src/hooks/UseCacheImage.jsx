@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
-import { setBlob, getBlob } from '../../services/indexedDB';
-import Loading from '../Loading/Loading';
+import { setBlob, getBlob } from '../services/indexedDB';
 
-
-const useCachedImage = (src) => {
+const useCacheImage = (src) => {
 
     const [imageUrl, setImageUrl] = useState('');
     const [loading, setLoading] = useState(true);
-
    
     useEffect(() => {
         async function fetchOrCacheImage() {
@@ -61,14 +58,4 @@ const useCachedImage = (src) => {
 
 
 
-export const CacheImageModal = ({ src, alt, className }) => {
-    const { imageUrl, loading } = useCachedImage(src);
-
-    if( loading ) return <Loading/>
-
-
-    return <img src={imageUrl || 'default-placeholder.png'} alt={alt}  className={className} loading="lazy" />;
-};
-
-
-export default useCachedImage;
+export default useCacheImage;

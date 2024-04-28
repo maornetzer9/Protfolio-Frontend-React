@@ -1,8 +1,7 @@
 // S3 Cloud Base Url
 import { S3_CLOUD_URL } from "../../env";
-import cache from "../../services/cache";
-// Images
 
+// Images
 const pacManSign = `${S3_CLOUD_URL}images/gallery/fulls/PacMan-Sign.png`;
 const pacManGame = `${S3_CLOUD_URL}images/gallery/fulls/PacMan-Game.png`;
 const NetflixSign = `${S3_CLOUD_URL}images/gallery/fulls/Netflix-Sign.png`;
