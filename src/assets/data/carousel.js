@@ -124,7 +124,6 @@ export const settings = {
     ]
 };
 
-
 // Arrow Right Settings
 export function SampleNextArrow(props) {
     const { className, style, onClick } = props;

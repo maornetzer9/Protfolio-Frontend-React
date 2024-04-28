@@ -1,5 +1,5 @@
-import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
 import "./personModal.css";
+import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
 import React, { useEffect, useState } from "react";
 
 export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS = [], SKILLS = [] }) {
@@ -13,11 +13,16 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+
     return (
         <div>
             {PERSONAL.map((person, index) => (
                 <LazyLoadModal key={index}>
-                    <div key={index} className="personContainer" dir="rtl">
+                    <div 
+                        dir="rtl"
+                        key={index} 
+                        className="personContainer" 
+                    >
                         <div className="person-image">
                             <img
                                 loading="lazy"
@@ -40,8 +45,8 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
                     <div key={index} className="personContainer" dir="ltr">
                         <div className="goal-image">
                             <img
-                                src={goal.image}
                                 loading="lazy"
+                                src={goal.image}
                                 alt={goal.title}
                             />
                         </div>

@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { COMPONENTS } from "../../assets/data/components";
 import Loading from '../Loading/Loading';
 import LazyLoadModal from '../Lazy-Load-Modal/LazyLoadModal';
+import ResponsiveProvider from '../../context/ResponsiveProvider';
 
 export default function Home() {
     const componentRefs = useRef([]);
@@ -17,20 +18,22 @@ export default function Home() {
 
     return (
         <div>
-            <React.Suspense fallback={<Loading />}>
-                {COMPONENTS.map((target, index) => (
-                    <LazyLoadModal 
-                        key={index} 
-                        ref={(el) => componentRefs.current[index] = el}
-                    >
-                        <target.Component
-                            {...target.props}
-                            onClick={() => scrollToNextComponent(index)}
-                            scrollToTop={scrollToTop}
-                        />
-                    </LazyLoadModal>
-                ))}
-            </React.Suspense>
+            <ResponsiveProvider>
+                <React.Suspense fallback={<Loading />}>
+                    {COMPONENTS.map((target, index) => (
+                        <LazyLoadModal 
+                            key={index} 
+                            ref={(el) => componentRefs.current[index] = el}
+                        >
+                            <target.Component
+                                {...target.props}
+                                onClick={() => scrollToNextComponent(index)}
+                                scrollToTop={scrollToTop}
+                            />
+                        </LazyLoadModal>
+                    ))}
+                </React.Suspense>
+            </ResponsiveProvider>
         </div>
     );
 }

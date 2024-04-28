@@ -8,6 +8,7 @@ import LazyLoadModal from "../Lazy-Load-Modal/LazyLoadModal";
 
 function Carousel({ onClick, snapCraftImage = [], snapCraftVideo = [] }) {
 
+
     const renderImages = () =>
         snapCraftImage.map((project, index) => (
             <LazyLoadModal key={index} as="div" className="card">
@@ -41,6 +42,7 @@ function Carousel({ onClick, snapCraftImage = [], snapCraftVideo = [] }) {
                 </div>
             </LazyLoadModal>
         ));
+
 
     return (
         <div>
