@@ -85,7 +85,7 @@ export default function ContactUs({ scrollToTop = () => {} }) {
                     rel="noopener noreferrer"
                     className="linkButton"
                 >
-                    <BiLogoLinkedin size={20} />
+                    <BiLogoLinkedin size={20} className="linkedin_button"/>
                 </a>
             </div>
         </div>

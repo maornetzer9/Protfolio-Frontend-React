@@ -1,6 +1,7 @@
 import "./personModal.css";
 import LazyLoadModal from "../../UI/Lazy-Load-Modal/LazyLoadModal";
 import React, { useEffect, useState } from "react";
+import { CacheImageModal } from "../Use-Cache-Image/UseCacheImage";
 
 export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS = [], SKILLS = [] }) {
 
@@ -14,6 +15,8 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
     }, []);
 
 
+
+
     return (
         <div>
             {PERSONAL.map((person, index) => (
@@ -24,7 +27,7 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
                         className="personContainer" 
                     >
                         <div className="person-image">
-                            <img
+                            <CacheImageModal
                                 loading="lazy"
                                 src={person.image}
                                 alt={person.title}
@@ -44,7 +47,7 @@ export default function PersonModal({ onClick = () => {}, PERSONAL = [], GOALS =
             {GOALS.map((goal, index) => (
                     <div key={index} className="personContainer" dir="ltr">
                         <div className="goal-image">
-                            <img
+                            <CacheImageModal
                                 loading="lazy"
                                 src={goal.image}
                                 alt={goal.title}
